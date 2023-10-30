@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		#language-table{
+			display: none;
+			margin: 0 auto;
+		}
+		.table-heading{
+			text-align: center;
+		}
+
+		#show-language{
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			padding: 30px
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div id="displayJson"></div>
+
+		<button  id="show-language" class="btn-primary btn-lg"> Top 10 Programming Languages</button>
+
+		<div id= "language-table">
+			<h2 class="table-heading">Top 10 Programming Languages</h2>
+
+
+
+			<table class="table table-striped" >
+
+				<thead>
+					<!-- 	<h1>Top 10 Programming Languages</h1> -->
+					<tr>
+						<th>#</th>
+						<th>Name</th>
+						<th>Popularity</th>
+						<th>Synatx</th>
+						<th>Usage</th>
+						<th>Community</th>
+					</tr>
+				</thead>
+				<tbody id="lang-data">
+					<tr >
+
+					</tr>
+				<!-- <tr >
+					<td>1</td>
+					<td>JavaScript</td>
+					<td>Very High</td>
+					<td>C-like</td>
+					<td>Web development, front-end, back-end</td>
+					<td>Large and active</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>JavaScript</td>
+					<td>Very High</td>
+					<td>C-like</td>
+					<td>Web development, front-end, back-end</td>
+					<td>Large and active</td>
+				</tr> -->
+				
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+<script src="script.js"></script>
+<script type="text/javascript" src="progLang.json"></script>
+</body>
+</html>
