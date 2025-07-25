@@ -1,0 +1,83 @@
+
+[
+  {
+    "name": "HIIT Blast",
+    "duration": "45 min",
+    "intensity": "High",
+    "category": "Cardio",
+    "instructor": "Jake M.",
+    "popularity": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "name": "Yoga Flow",
+    "duration": "60 min",
+    "intensity": "Medium",
+    "category": "Flexibility",
+    "instructor": "Sasha L.",
+    "popularity": "⭐⭐⭐⭐"
+  },
+  {
+    "name": "Zumba",
+    "duration": "50 min",
+    "intensity": "Medium",
+    "category": "Dance",
+    "instructor": "Tina K.",
+    "popularity": "⭐⭐⭐⭐"
+  },
+  {
+    "name": "Bootcamp",
+    "duration": "60 min",
+    "intensity": "High",
+    "category": "Strength",
+    "instructor": "Mike T.",
+    "popularity": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "name": "Spin Class",
+    "duration": "40 min",
+    "intensity": "High",
+    "category": "Cardio",
+    "instructor": "Laura W.",
+    "popularity": "⭐⭐⭐⭐"
+  },
+  {
+    "name": "Pilates Core",
+    "duration": "55 min",
+    "intensity": "Medium",
+    "category": "Core",
+    "instructor": "Emma R.",
+    "popularity": "⭐⭐⭐⭐"
+  },
+  {
+    "name": "Power Lifting",
+    "duration": "60 min",
+    "intensity": "High",
+    "category": "Strength",
+    "instructor": "Dan S.",
+    "popularity": "⭐⭐⭐"
+  },
+  {
+    "name": "Barre Basics",
+    "duration": "45 min",
+    "intensity": "Low",
+    "category": "Balance",
+    "instructor": "Karen F.",
+    "popularity": "⭐⭐⭐⭐"
+  },
+  {
+    "name": "Kickboxing",
+    "duration": "50 min",
+    "intensity": "High",
+    "category": "Cardio",
+    "instructor": "Josh B.",
+    "popularity": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "name": "Stretch & Recover",
+    "duration": "30 min",
+    "intensity": "Low",
+    "category": "Recovery",
+    "instructor": "Nina C.",
+    "popularity": "⭐⭐⭐"
+  }
+]
