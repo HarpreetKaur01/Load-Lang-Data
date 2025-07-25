@@ -1,24 +1,47 @@
-.container
-{
-margin: aoto;
-//text-align: center;
+body {
+  background-image: url("fitness-classes-background.jpg");
+  background-size: cover; /* Covers entire screen */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
 }
-#language-table
-{
-display: none;
-margin: 0 auto;
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  pointer-events: none; 
 }
-.table-heading
-{
-text-align: center;
+
+#classes-table {
+  display: none;
+  margin: 0 auto;
+  background: rgb(223 104 104 / 70%);
+  margin-top: 30px;
 }
-#show-language
-{
-margin: 0;
-position: absolute;
-top: 50%;
-left: 50%;
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-padding: 30px
+.table-heading {
+  text-align: center;
+}
+
+#show-class-container {
+  /* margin: 0 auto; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+#show-classes {
+  background-color: #a10707;
+  border-color: #a10707;
+  padding: 20px;
+}
+#show-classes:hover {
+  background-color: brown;
 }
