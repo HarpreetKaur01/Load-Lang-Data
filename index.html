@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Programming Languages</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Classes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        id="show-class-container"
+        class="justify-content-center align-items-center"
+      >
+        <button id="show-classes" class="btn-primary btn-lg text-center p-20">
+          Top 10 Fitness Classes
+        </button>
+        <p
+          class="lead text-center"
+          style="color: white; text-shadow: 2px 2px 6px rgb(191 4 4 / 80%)"
+        >
+          Explore our most popular fitness classes based on member ratings
+        </p>
+      </div>
 
-</head>
-<body>
+      <div id="classes-table">
+        <h2 class="table-heading">Class Schedule</h2>
 
-	<div class="container">
-		<div id="displayJson"></div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Class Name</th>
+              <th>Duration</th>
+              <th>Intensity</th>
+              <th>Category</th>
+              <th>Instructor</th>
+              <th>Popularity</th>
+            </tr>
+          </thead>
+          <tbody id="classes-data"></tbody>
+        </table>
+      </div>
+    </div>
 
-		<button  id="show-language" class="btn-primary btn-lg"> Top 10 Programming Languages</button>
-
-		<div id= "language-table">
-			<h2 class="table-heading">Top 10 Programming Languages</h2>
-			
-			<table class="table table-striped" >
-
-				<thead>
-					
-					<tr>
-						<th>#</th>
-						<th>Name</th>
-						<th>Popularity</th>
-						<th>Synatx</th>
-						<th>Usage</th>
-						<th>Community</th>
-					</tr>
-				</thead>
-				<tbody id="lang-data">
-				
-			</tbody>
-		</table>
-	</div>
-
-</div>
-
-<script src="script.js"></script>
-<script type="text/javascript" src="progLang.json"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
