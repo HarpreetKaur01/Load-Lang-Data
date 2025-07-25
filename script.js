@@ -1,50 +1,49 @@
- const showLangBtn = document.getElementById('show-language');
- showLangBtn.addEventListener('click', () => {
- 	const languageTable = document.getElementById('language-table');
+const showClassContainer = document.getElementById("show-class-container");
 
- 	languageTable.style.display = 'table';
- 	showLangBtn.style.display = 'none';
- 	loadLanguages();
- });
+const showClasses = document.getElementById("show-classes");
+
+showClasses.addEventListener("click", () => {
+  const classTable = document.getElementById("classes-table");
+
+  classTable.style.display = "table";
+
+  showClassContainer.style.display = "none";
+  loadClasses();
+});
 
 let data = [];
-async function loadLanguages()
-{
+async function loadClasses() {
+  try {
+    const response = await fetch("classes.json");
+    if (!response.ok) {
+      throw new Error("Network error");
+    }
 
-	try {
+    data = await response.json();
 
-		const response = await fetch("progLang.json");
-		if (!response.ok) {
-			throw new Error("Network error");
-		}
-
-		data = await response.json();
-
-		displayLanguage(data);
-		
-		
-	}
-	catch(error) {
-		
-		console.log(error.message);
-	}
+    displayClasses(data);
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
-function displayLanguage(Data){
+function displayClasses(Data) {
+  console.log(JSON.stringify(Data));
 
-console.log(JSON.stringify(Data));
-
-const dummyDat =  Data.map((dataItem) => {
-
-return `<tr >
-					<td>${dataItem.id}</td>
+  const dummyDat = Data.map((dataItem, index) => {
+    return `<tr >
+					<td>${index + 1}</td>
 					<td>${dataItem.name}</td>
+					
+					<td>${dataItem.duration}</td>
+					<td>${dataItem.intensity}</td>
+					
+					<td>${dataItem.category}</td>
+					<td>${dataItem.instructor}</td>
 					<td>${dataItem.popularity}</td>
-					<td>${dataItem.syntax}</td>
-					<td>${dataItem.usage}</td>
-					<td>${dataItem.community}</td>
-				</tr>`
-}).join("");
+					
+				</tr>`;
+  }).join("");
 
-document.getElementById('lang-data').innerHTML = dummyDat;
+  document.getElementById("classes-data").innerHTML = dummyDat;
 }
